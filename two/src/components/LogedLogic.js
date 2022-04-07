@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from 'react-redux';
 const LogedLogic = () => {
   const dispatch = useDispatch();
   const user = useSelector((store) => store.userReducer);
-  console.log('user:', user);
   useEffect(() => {
     axios.get('https://jsonplaceholder.typicode.com/users/2').then((response) => {
       const { data } = response;

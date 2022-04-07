@@ -1,3 +1,4 @@
+// actions
 export const add = (nr) => {
   return {
     type: 'add',
@@ -11,6 +12,7 @@ export const minus = (nr) => {
   };
 };
 
+// reducer
 export const counterReducer = (state = 0, action) => {
   switch (action.type) {
     case 'add':
@@ -21,4 +23,3 @@ export const counterReducer = (state = 0, action) => {
       return state;
   }
 };
-// FIXME: create another reducer

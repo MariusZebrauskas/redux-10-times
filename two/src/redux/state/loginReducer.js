@@ -1,3 +1,5 @@
+// actions
+
 export const login = (user) => {
   return {
     type: 'login',
@@ -9,6 +11,8 @@ export const logout = () => {
     type: 'logout',
   };
 };
+
+// reducer
 
 export const userReducer = (state = null, action) => {
   switch (action.type) {
